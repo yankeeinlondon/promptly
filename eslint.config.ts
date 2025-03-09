@@ -1,4 +1,4 @@
-import antfu from "@antfu/eslint-config"
+import antfu from '@antfu/eslint-config'
 
 export default antfu(
   {
@@ -8,29 +8,23 @@ export default antfu(
     stylistic: {
       quotes: "double",
       semi: true,
-      indent: 4,
       overrides: {
-        "style/indent": ["error", 4],
-        "style/indent-binary-ops": ["error", 4],
-        "@typescript-eslint/indent": ["error", 4],
-        "quote-props": ["off"],
-        "style/quote-props": ["off"],
+        "style/indent-binary-ops": ["warn", 4],
         "array-callback-return": ["warn"],
         "valid-typeof": ["warn"],
-        "no-fallthrough": ["off"],
-        "style/comma-dangle": ["warn", "only-multiline"],
+        "no-console": ["off"],
+        "node/prefer-global/process": ["off"],
+        "no-case-declarations": ["off"],
+        "antfu/no-top-level-await": ["off"]
       }
     },
     regexp: {
       overrides: {
-        "regexp/no-super-linear-backtracking": ["warn"],
-        "regexp/no-unused-capturing-group": ["warn"]
+        "regexp/no-super-linear-backtracking": ["warn"]
       }
     },
     typescript: {
       overrides: {
-        // Disable the interface-over-type rule
-        "ts/consistent-type-definitions": ["off"],
         "ts/explicit-function-return-type": ["off"],
         "ts/no-unused-vars": [
           "warn",
@@ -40,8 +34,8 @@ export default antfu(
             destructuredArrayIgnorePattern: "^_|^cases$",
           },
         ],
-        "ts/no-unsafe-function-type": ["off"]
       },
     }
   }
 )
+

@@ -1,7 +1,7 @@
 import { createKindError } from "@yankeeinlondon/kind-error";
 
 export const InputOutput = createKindError(
-    "InputOutput"
+  "InputOutput",
 );
 
 export const ClipboardError = createKindError("ClipboardError");

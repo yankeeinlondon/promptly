@@ -1,2 +1,1 @@
-export * from "./getPage"
-
+export * from "./getPage";

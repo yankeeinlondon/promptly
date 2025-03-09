@@ -11,6 +11,5 @@
  * - `mailto`
  */
 export function link(text: string, link: string) {
-    return `\x1B]8;;${link}\x1B\\${text}\x1B]8;;\x1B\\`;
+  return `\x1B]8;;${link}\x1B\\${text}\x1B]8;;\x1B\\`;
 }
-
