@@ -5,7 +5,8 @@
     "scripts": {
         "build": "tsup",
         "test": "vitest",
-        "lint": "eslint src --fix"
+        "lint": "eslint src --fix",
+        "release": "bumpp"
     },
     "keywords": [
         "CLI",
